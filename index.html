@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <title>Hashing</title>
+</head>
+<body>
+    <h1>Vælg hashing algoritme</h1>
+    <br>
+    <select id="hash-algo">
+        <option value="MD5">MD5</option>
+        <option value="SHA1">SHA1</option>
+        <option value="SHA256">SHA256</option>
+        <option value="SHA3">SHA3</option>
+    </select>
+    <br>
+    <p>Tekst der skal hashes:</p>
+    <textarea style="width: 200px; height:100px; resize: none;" id="hash-text"></textarea>
+    <br>
+    <br>
+    <button id="hash-btn">Hash</button>
+    <br>
+    <p>Tekst der er blevet hashet:</p>
+    <textarea style="width: 200px; height:100px; resize: none;" id="hashed-text"></textarea>
+</body>
+<script defer src="app.js"></script>
+</html>
